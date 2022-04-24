@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head th:insert="layout::head">
+<meta charset="UTF-8">
+</head>
+<body>
+	<br>
+	<br>
+	<br>
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="container">
+					<div class="row">
+						<div class="col-1"></div>
+						<div class="col-5 d-flex align-items-center">
+							<div th:insert="layout::CarAreas"></div>
+						</div>
+						<div class="col-5">
+							<div class="card">
+								<div class="card-body">
+									<img alt="" th:src="@{/img/LOGO-CARLEY.png}" width="440px"
+										height="250px"> <br> <br>
+									<form th:action="@{/ingresar}" method="post"
+										th:object="${login}">
+										<label for="correo">Ingrese su correo</label> <input
+											type="email" id="correo" name="correo" class="form-control"
+											required placeholder="carley@carley.com.pe"> <br>
+										<label for="contrasenia">Ingrese su contraseña</label> <input
+											type="password" id="contrasenia" name="contrasenia"
+											class="form-control" required placeholder="***********************">
+										<br>
+										<div class="d-grid gap-2">
+											<button type="submit" class="btn bg-success text-white">INGRESAR</button>
+										</div>
+									</form>
+									<br>
+									<button type="submit" class="btn bg-primary text-white">ADMINISTRAR</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-1"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head th:fragment="head">
+<meta charset="UTF-8">
+<title>Carley</title>
+<link rel="icon" th:href="@{/img/LOGO-CARLEY.png}">
+<link rel="stylesheet" type="text/css"
+	th:href="@{/css/bootstrap/bootstrap.min.css}">
+<link rel="stylesheet" type="text/css"
+	th:href="@{/css/personalizado/login.css}">
+<script type="text/javascript"
+	th:src="@{/js/bootstrap/bootstrap.bundle.min.js}">
+</script>
+</head>
+<body>
+
+	<!-- CORRUSEL - LOGIN -->
+
+	<div th:fragment="CarAreas" id="carouselExampleIndicators"
+		class="carousel slide" data-bs-ride="carousel">
+		<div class="carousel-indicators">
+			<button type="button" data-bs-target="#carouselExampleIndicators"
+				data-bs-slide-to="0" class="active" aria-current="true"
+				aria-label="Slide 1"></button>
+			<button type="button" data-bs-target="#carouselExampleIndicators"
+				data-bs-slide-to="1" aria-label="Slide 2"></button>
+			<button type="button" data-bs-target="#carouselExampleIndicators"
+				data-bs-slide-to="2" aria-label="Slide 3"></button>
+		</div>
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img
+					src="https://carley.com.pe/wp-content/uploads/2022/02/DSC_8428.jpg"
+					class="d-block w-100" alt="...">
+			</div>
+			<div class="carousel-item">
+				<img
+					src="https://carley.com.pe/wp-content/uploads/2022/02/DSC_8249-1024x684.jpg"
+					class="d-block w-100" alt="...">
+			</div>
+			<div class="carousel-item">
+				<img
+					src="https://carley.com.pe/wp-content/uploads/2022/02/DSC_8425-1024x684.jpg"
+					class="d-block w-100" alt="...">
+			</div>
+		</div>
+		<button class="carousel-control-prev" type="button"
+			data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span> <span
+				class="visually-hidden">Previous</span>
+		</button>
+		<button class="carousel-control-next" type="button"
+			data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span> <span
+				class="visually-hidden">Next</span>
+		</button>
+	</div>
+
+	<!-- *********************** -->
+
+	<!-- CABECERA EMPLEADO -->
+
+	<nav th:fragment="navEmpleado" class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="container-fluid">
+			<img th:src="@{/img/LOGO-CARLEY.png}" alt="" width="120px" height="45" class="d-inline-block align-text-top">
+			<button class="navbar-toggler" type="button"
+				data-bs-toggle="collapse" data-bs-target="#herraEmpleado"
+				aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="herraEmpleado">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item"></li>
+					<li class="nav-item"></li>
+				</ul>
+				
+				<a class="btn bg-primary text-white"  th:href="@{/login}">SALIR</a>
+				
+			</div>
+		</div>
+	</nav>
+
+</body>
+</html>
